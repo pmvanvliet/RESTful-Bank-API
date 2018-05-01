@@ -13,9 +13,9 @@ module.exports = (callback) => {
     db.on('connected', () => {
         console.log("Mongoose connected.")
     })
-
+    
     db.on('open', () => {
-        callback(mongoose)
+        callback(mongoose) // Starting Mongoose
     })
 
     db.on('disconnected', () => {
